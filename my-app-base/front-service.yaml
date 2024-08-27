@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-service-f
+  labels:
+    name: web-f
+    app: todoapp-f
+spec:
+  selector:
+    name: web-f
+  type: NodePort
+  ports:
+   - name: http
+     port: 3000
+     targetPort: 3000
+     nodePort: 30002
+     protocol: TCP
