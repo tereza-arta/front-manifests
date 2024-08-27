@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-deployment-f
+spec:
+  selector:
+    matchLabels:
+      name: web-f
+  template:
+    metadata:
+      labels:
+        name: web-f
+        app: todoapp-f
+    spec:
+      containers:
+        - image: terezabisharyan/app-frontend:d41745cf6453eb4f84cf6fe31726d6f6b83e4d0a
+          imagePullPolicy: Always
+          name: myweb
+          ports:
+            - containerPort: 3000
