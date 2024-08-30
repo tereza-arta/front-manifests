@@ -18,6 +18,6 @@ spec:
           name: myweb
           ports:
             - containerPort: 80
-          #env:
-          #- name: BACKEND_URL
-            #value: "http://web-service.default.svc.cluster.local"
+          env:
+          - name: BACKEND_URL
+            value: "http://web-service.default.svc.cluster.local"
