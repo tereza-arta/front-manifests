@@ -20,4 +20,4 @@ spec:
             - containerPort: 80
           env:
           - name: BACKEND_HOSTNAME
-            value: "http://web-service.default.svc.cluster.local"
+            value: "http://web-service.default.svc.cluster.local:3001"
