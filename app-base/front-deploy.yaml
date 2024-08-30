@@ -19,5 +19,5 @@ spec:
           ports:
             - containerPort: 80
           env:
-          - name: BACKEND_HOSTNAME
+          - name: BACKEND_URL
             value: "http://web-service.default.svc.cluster.local:3001"
