@@ -13,7 +13,7 @@ spec:
         app: todoapp-f
     spec:
       containers:
-        - image: terezabisharyan/app-frontend:025ac4bcf2579757d2a3ea35cd8012064f6b3eac
+        - image: terezabisharyan/app-frontend:7264764688ce86394dd2b5c0f91bbd07ba078e2c
           imagePullPolicy: Always
           name: myweb
           ports:
