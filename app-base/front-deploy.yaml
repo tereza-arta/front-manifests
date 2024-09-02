@@ -17,7 +17,7 @@ spec:
           imagePullPolicy: Always
           name: myweb
           ports:
-            - containerPort: 80
+            - containerPort: 3000
           #env:
           #- name: REACT_APP_BASE_URL
             #value: http://web-service.default.svc.cluster.local
